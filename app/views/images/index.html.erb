@@ -37,10 +37,10 @@
 
 <div class="row" style="margin-top: 100px">
     <div class="col-sm-1"></div>
-    <div class="col-sm-4" style="margin-top: 20px; margin-left: 45px">
+    <div class="col-sm-3" style="margin-left: 100px">
         <div class="panel panel-warning">
             <div class="panel-heading">
-                <img src=<%= current_user.avatar %> style="height:381px;width:100%">
+                <img src=<%= current_user.avatar %> style="height:250px;width:100%">
             </div>
             <div class="panel-body">
                 <p class="user-info"><i class="fa fa-address-book"> ニックネーム </i></p>
@@ -64,9 +64,9 @@
                         <!-- Icon -->
                         <div class="fadeIn first">
                             <% if image.file.present? %>
-                            <%= link_to (image_tag image.file.url, class:'center-block', style:'align-content: center; width: 470px;', id: "img_prev"), image_path(image) %>
+                            <%= link_to (image_tag image.file.url, class:'center-block', style:'align-content: center; width: 350px; height: 350px', id: "img_prev"), image_path(image) %>
                             <% else %>
-                            <%= link_to (image_tag image.link, class:'center-block', style:'align-content: center; width: 470px;', id: "img_prev"), image_path(image) %>
+                            <%= link_to (image_tag image.link, class:'center-block', style:'align-content: center; width: 350px; height: 350px', id: "img_prev"), image_path(image) %>
                             <% end %>
                         </div>
                         
